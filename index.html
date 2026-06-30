@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio and resume site for Evan Kordovi."
+    />
+    <title>Evan Kordovi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Evan Kordovi home">
+        <span class="brand-mark">EK</span>
+        <span>Evan Kordovi</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/portfolio-hero.png"
+          alt="A bright desk with a laptop, notebook, and research materials"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Student researcher and project builder</p>
+          <h1 id="hero-title">Evan Kordovi</h1>
+          <p class="hero-copy">
+            I connect careful scientific thinking with practical tools, clear
+            communication, and projects that make complex work easier to use.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View Projects</a>
+            <a class="button secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" id="about" aria-labelledby="about-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-label">About</p>
+            <h2 id="about-title">Curious, precise, and happiest near a hard question.</h2>
+          </div>
+          <div class="rich-text">
+            <p>
+              I am building a path at the intersection of biological research,
+              data analysis, and communication. My work is shaped by patience at
+              the bench, respect for evidence, and a belief that good systems
+              should help people think more clearly.
+            </p>
+            <p>
+              I value work that is rigorous enough to trust and simple enough
+              to share, whether that means a cleaner dataset, a stronger
+              research narrative, or a better way to document a project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-label">Selected Work</p>
+            <h2 id="work-title">Projects worth opening a second tab for.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Research</span>
+                <span>2026</span>
+              </div>
+              <h3>Biology Research Summary</h3>
+              <p>
+                A concise narrative of lab work, experimental thinking, and
+                scientific questions that shaped my current research interests.
+              </p>
+              <a href="#contact" aria-label="Ask Evan about the Biology Research Summary project">Discuss project</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Data</span>
+                <span>2026</span>
+              </div>
+              <h3>Feature Analysis Workflow</h3>
+              <p>
+                A spreadsheet-to-insight workflow for cleaning observations,
+                comparing groups, and presenting patterns in a usable format.
+              </p>
+              <a href="#contact" aria-label="Ask Evan about the Feature Analysis Workflow project">Discuss project</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Writing</span>
+                <span>2026</span>
+              </div>
+              <h3>Application Materials</h3>
+              <p>
+                Research statements and application documents that translate
+                experience into a clear scientific story.
+              </p>
+              <a href="#contact" aria-label="Ask Evan about the Application Materials project">Discuss project</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-band" id="experience" aria-labelledby="experience-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-label">Experience</p>
+            <h2 id="experience-title">A compact resume snapshot.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-date">Current</p>
+              <div>
+                <h3>Research and academic preparation</h3>
+                <p>
+                  Developing laboratory skills, scientific writing, and
+                  project-based analysis for research-focused opportunities.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-date">Recent</p>
+              <div>
+                <h3>Data and documentation projects</h3>
+                <p>
+                  Built organized materials from raw information, with attention
+                  to clarity, reproducibility, and presentation quality.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-date">Next</p>
+              <div>
+                <h3>Research assistant roles and collaborations</h3>
+                <p>
+                  Seeking teams where careful observation, persistence, and
+                  communication matter as much as technical skill.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2 id="contact-title">Let this be the link that makes the resume feel alive.</h2>
+          </div>
+          <div class="contact-panel">
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Evan Kordovi</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
