@@ -25,20 +25,9 @@ If you use a different repository name, the site will usually appear at:
 
 `https://evankordovi.github.io/repository-name/`
 
-## Local Preview
-
-Open `index.html` in a browser, or run a tiny local server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit:
-
-`http://localhost:8000`
 
 ## Generated Asset
 
-The hero image was generated for this project and saved at:
+The image was generated for this project and saved at:
 
 `assets/portfolio-hero.png`
