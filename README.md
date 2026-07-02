@@ -2,28 +2,25 @@
 
 This is a static resume and portfolio website built for GitHub Pages.
 
+Live site target:
+
+`https://ekordovi.github.io/E_website/`
+
 ## Edit Before Publishing
 
-Update these fields in `index.html`:
+Review these fields in `index.html` before putting the link on a resume:
 
-- `your.email@example.com`
-- LinkedIn URL
-- GitHub URL
-- project titles and descriptions
-- experience entries
+- LinkedIn URL: currently points to a LinkedIn people search because an exact profile URL was not verified.
+- Project titles and descriptions.
+- Experience entries.
 
 ## Publish on GitHub Pages
 
-1. Create a GitHub repository named `evankordovi.github.io`.
-2. Add these files to that repository.
-3. Push to the `main` branch.
-4. In GitHub, open `Settings` > `Pages`.
-5. Set the source to `Deploy from a branch`, choose `main`, and choose `/root`.
-6. Your site should appear at `https://evankordovi.github.io/`.
-
-If you use a different repository name, the site will usually appear at:
-
-`https://evankordovi.github.io/repository-name/`
+1. Use the existing GitHub repository: `ekordovi/E_website`.
+2. Push changes to the `main` branch.
+3. In GitHub, open `Settings` > `Pages`.
+4. Set the source to `Deploy from a branch`, choose `main`, and choose `/root`.
+5. Your site should appear at `https://ekordovi.github.io/E_website/`.
 
 ## Local Preview
 
