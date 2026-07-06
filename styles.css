@@ -538,6 +538,16 @@ h3 {
   color: var(--muted);
 }
 
+.note-layout {
+  max-width: 760px;
+  margin-top: 22px;
+}
+
+.note-layout p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .evidence-list {
   margin: 16px 0 0;
   padding-left: 1.1rem;
@@ -589,6 +599,14 @@ h3 {
   background: var(--coral);
 }
 
+.project-card:nth-child(5)::before {
+  background: var(--teal-dark);
+}
+
+.project-card:nth-child(6)::before {
+  background: var(--blue);
+}
+
 .project-card:hover {
   border-color: var(--line-strong);
   box-shadow: var(--shadow);
@@ -609,6 +627,14 @@ h3 {
 
 .project-card:nth-child(4) .project-tag {
   color: var(--coral);
+}
+
+.project-card:nth-child(5) .project-tag {
+  color: var(--teal-dark);
+}
+
+.project-card:nth-child(6) .project-tag {
+  color: var(--blue);
 }
 
 .project-card p:not(.project-tag) {

@@ -118,11 +118,11 @@
           <div class="skills-grid" aria-label="Skill categories">
             <article class="skill-card">
               <h3>Biology & Research</h3>
-              <p>Cancer biology exposure, molecular signaling, oncology interests, antibody engineering concepts, and translational biology questions.</p>
+              <p>Cancer biology exposure, molecular signaling, COL6 protein-expression analysis, antibody engineering concepts, and translational biology questions.</p>
             </article>
             <article class="skill-card">
               <h3>Data & Tools</h3>
-              <p>Python, SQL, R, Excel, statistics practice, spreadsheet cleanup, field standardization, and analysis-ready table structure.</p>
+              <p>Python, pandas, SQL, SQLite, R, Excel, statistics practice, spreadsheet cleanup, and analysis-ready table structure.</p>
             </article>
             <article class="skill-card">
               <h3>Scientific Communication</h3>
@@ -130,7 +130,7 @@
             </article>
             <article class="skill-card">
               <h3>Lab Readiness</h3>
-              <p>Organized notes, consistency, traceability, research habits, and awareness of SOP/GMP expectations in regulated work.</p>
+              <p>RNA extraction, cDNA synthesis, qRT-PCR, BCA assays, SDS-PAGE, Western blotting, native PAGE, and SOP/GMP awareness.</p>
             </article>
           </div>
         </div>
@@ -151,21 +151,22 @@
           <div class="project-grid">
             <article class="project-card">
               <p class="project-tag">House Lab research exposure</p>
-              <h3>Cancer biology pathway communication</h3>
+              <h3>House Lab Cancer Biology Research Exposure</h3>
               <p>
-                Used House Lab research exposure to practice reading cancer biology
-                literature, following molecular signaling relationships, and explaining
-                how pathway logic connects to ovarian cancer behavior. The artifact is
-                a short pathway summary supported by a BioRender figure.
+                Undergraduate research exposure in the SDSU House Lab included
+                molecular biology and protein-analysis workflows connected to ovarian
+                cancer model conditions. I supported work involving RNA extraction,
+                cDNA synthesis, qRT-PCR, BCA assays, SDS-PAGE, Western blotting,
+                native PAGE, and COL6 protein-expression analysis.
               </p>
-              <p class="artifact"><strong>Artifact:</strong> pathway summary + supporting figure notes.</p>
+              <p class="artifact"><strong>Artifact:</strong> pathway summary, COL6-focused figure notes, and resume-backed lab-method experience.</p>
               <ul class="skill-row" aria-label="Skills and tools used">
-                <li>Cancer biology</li>
-                <li>Molecular signaling</li>
+                <li>qRT-PCR</li>
+                <li>Western blotting</li>
+                <li>native PAGE</li>
                 <li>COL6</li>
-                <li>Literature review</li>
               </ul>
-              <a class="card-link" href="#house-lab-notes" data-open-details="house-lab-notes" aria-label="Open Evan's House Lab research notes">View House Lab notes</a>
+              <a class="card-link" href="#house-lab-notes" data-open-details="house-lab-notes" aria-label="Open Evan's House Lab research notes">View figure notes</a>
             </article>
 
             <article class="project-card">
@@ -186,27 +187,63 @@
                 <li>FACS concepts</li>
                 <li>Computational tools</li>
               </ul>
-              <a class="card-link" href="#contact" aria-label="Email Evan about antibody engineering research interests">Email me about this</a>
+              <a class="card-link" href="#antibody-map" data-open-details="antibody-map" aria-label="Open Evan's antibody engineering research map">View research map</a>
             </article>
 
             <article class="project-card">
-              <p class="project-tag">Data organization</p>
-              <h3>Research information cleanup</h3>
+              <p class="project-tag">Biology data analysis</p>
+              <h3>BiTE Functional Screening Analysis</h3>
               <p>
-                Organized complex research-adjacent information into cleaner tables,
-                standardized fields, and analysis-ready structures for Excel, SQL,
-                Python, and R practice. The project produced tabular materials with
-                consistent columns, cleaned labels, and clearer comparison points for
-                follow-up analysis.
+                Analyzed cleaned supplementary data from a CD19xCD3 BiTE droplet
+                microfluidics screen to compare starting library composition against
+                functional hits. Calculated enrichment ratios across orientation,
+                linker type, CD3 scFv, and CD19 scFv variables.
               </p>
-              <p class="artifact"><strong>Artifact:</strong> cleaned table structure for filtering, comparison, and analysis practice.</p>
+              <p class="artifact"><strong>Artifact:</strong> notebook-style feature comparison and enrichment-ratio analysis.</p>
               <ul class="skill-row" aria-label="Skills and tools used">
-                <li>Excel</li>
-                <li>SQL</li>
                 <li>Python</li>
-                <li>Data QA</li>
+                <li>pandas</li>
+                <li>CSV data</li>
+                <li>notebooks</li>
               </ul>
-              <a class="card-link" href="#contact" aria-label="Email Evan about data organization skills">Email me about this</a>
+              <a class="card-link" href="#contact" aria-label="Email Evan about the BiTE functional screening analysis">Email Evan</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Behavioral data analysis</p>
+              <h3>Koi Behavioral Response Analysis</h3>
+              <p>
+                Analyzed field observations comparing koi responses to a human hand
+                and simulated predator stimulus. Calculated behavior proportions,
+                visualized response patterns, and interpreted a non-significant
+                chi-square result with appropriate limitations.
+              </p>
+              <p class="artifact"><strong>Artifact:</strong> public R analysis project with plots and statistical interpretation.</p>
+              <ul class="skill-row" aria-label="Skills and tools used">
+                <li>R</li>
+                <li>dplyr</li>
+                <li>ggplot2</li>
+                <li>chi-square testing</li>
+              </ul>
+              <a class="card-link" href="https://github.com/ekordovi/KOI_project" target="_blank" rel="noreferrer" aria-label="View Evan's Koi Behavioral Response Analysis GitHub project">View GitHub project</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Database-backed workflow</p>
+              <h3>RoVino Inventory Management System</h3>
+              <p>
+                Built a Flask and SQLite inventory app with CRUD workflows, category
+                filtering, low-stock alerts, restock history, authentication, admin
+                controls, and relational tables for inventory, users, restocks, and notes.
+              </p>
+              <p class="artifact"><strong>Artifact:</strong> public Flask/SQLite repository with database-backed inventory workflows.</p>
+              <ul class="skill-row" aria-label="Skills and tools used">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+                <li>SQL</li>
+              </ul>
+              <a class="card-link" href="https://github.com/ekordovi/RoVino_Inventory" target="_blank" rel="noreferrer" aria-label="View Evan's RoVino Inventory Management System GitHub project">View GitHub project</a>
             </article>
 
             <article class="project-card">
@@ -244,15 +281,34 @@
                 <p>
                   The BioRender figure is supporting evidence, not the main project.
                   The stronger signal is the House Lab research exposure behind it:
-                  reading pathway-focused material, identifying molecular relationships,
-                  and practicing clear explanation of cancer biology concepts.
+                  molecular biology work, protein-expression analysis, pathway-focused
+                  reading, and practice explaining cancer biology concepts.
                 </p>
                 <ul class="evidence-list">
-                  <li>Focused on TWEAK-Fn14/NF-kB signaling and COL6-associated stromal remodeling context.</li>
-                  <li>Practiced connecting molecular mechanisms to ovarian cancer behavior.</li>
-                  <li>Used visual communication to make pathway relationships easier to discuss.</li>
+                  <li>Supported workflows involving RNA extraction, cDNA synthesis, qRT-PCR, BCA assays, SDS-PAGE, Western blotting, and native PAGE.</li>
+                  <li>Evaluated COL6 protein expression using native Western blot data and GAPDH normalization across ovarian cancer model conditions.</li>
+                  <li>Used BioRender to communicate TWEAK-Fn14/NF-kB signaling and COL6-associated stromal remodeling context.</li>
                 </ul>
               </div>
+            </div>
+          </details>
+
+          <details class="research-figure" id="antibody-map">
+            <summary>
+              <span>Research map</span>
+              <strong>Open antibody engineering concept notes</strong>
+            </summary>
+            <div class="note-layout">
+              <p>
+                This is a conceptual map of an area I am studying, not a claim of
+                direct platform experience. The focus is how experimental selection
+                systems and computational tools can support antibody optimization.
+              </p>
+              <ul class="evidence-list">
+                <li>Yeast display and FACS concepts as ways to connect phenotype, binding signal, and selection.</li>
+                <li>Directed evolution and AHEAD/OrthoRep concepts as frameworks for iterative antibody improvement.</li>
+                <li>Computational tools as support for organizing sequence, feature, and developability questions.</li>
+              </ul>
             </div>
           </details>
         </div>
@@ -271,9 +327,9 @@
               <div>
                 <h3>House Lab / Biology Research Preparation</h3>
                 <ul>
-                  <li>Undergraduate cancer biology research exposure included molecular biology and protein-analysis workflows such as RNA extraction, cDNA synthesis, qRT-PCR, BCA assays, SDS-PAGE, Western blotting, and COL6-related expression analysis</li>
-                  <li>Gained undergraduate exposure to cancer biology, molecular signaling, and pathway-focused research questions. </li>
-                  <li>Built context for oncology, antibody engineering, drug discovery, and translational biology through focused reading and project work.</li>
+                  <li>Undergraduate Researcher in the SDSU House Lab, supporting molecular biology and protein-analysis workflows.</li>
+                  <li>Worked with RNA extraction, cDNA synthesis, qRT-PCR, BCA assays, SDS-PAGE, Western blotting, native PAGE, and COL6 protein-expression analysis.</li>
+                  <li>Built context for cancer biology, molecular signaling, oncology, antibody engineering, drug discovery, and translational biology.</li>
                 </ul>
               </div>
             </article>
@@ -283,8 +339,8 @@
               <div>
                 <h3>Scientific Data & Documentation</h3>
                 <ul>
-                  <li>Organized research information into tables, summaries, workflows, and reference materials.</li>
-                  <li>Practiced structuring information for Excel, SQL, Python, R, and statistics-oriented follow-up work.</li>
+                  <li>Completed applied data projects including BiTE feature-enrichment analysis, koi behavioral response analysis, and RoVino inventory workflows.</li>
+                  <li>Practiced structuring information for Python, pandas, SQL, SQLite, R, Excel, and statistics-oriented follow-up work.</li>
                 </ul>
               </div>
             </article>
