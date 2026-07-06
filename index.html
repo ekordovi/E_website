@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal portfolio and resume site for Evan Kordovi."
+      content="Early-career biology researcher focused on lab research, data analysis, antibody engineering interests, and scientific communication."
     />
-    <title>Evan Kordovi | Portfolio</title>
+    <meta property="og:title" content="Evan Kordovi | Biology Research & Data Portfolio" />
+    <meta
+      property="og:description"
+      content="Early-career biology researcher focused on lab research, data analysis, antibody engineering interests, and scientific communication."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ekordovi.github.io/E_website/" />
+    <meta property="og:image" content="https://ekordovi.github.io/E_website/assets/portfolio-hero.png" />
+    <title>Evan Kordovi | Biology Research & Data Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2317211f'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23d8a33d'%3EEK%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +29,14 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Evan Kordovi home">
         <span class="brand-mark">EK</span>
         <span>Evan Kordovi</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -37,24 +50,34 @@
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content">
+      <span id="top" aria-hidden="true"></span>
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
           src="assets/portfolio-hero.png"
           alt="A bright desk with a laptop, notebook, and research materials"
+          fetchpriority="high"
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Student researcher and project builder</p>
-          <h1 id="hero-title">Evan Kordovi</h1>
+          <p class="eyebrow">Early-career biology researcher / project builder</p>
+          <h1 id="hero-title">Biology research, data, and scientific communication with careful follow-through.</h1>
           <p class="hero-copy">
-            I am building a research-focused path through biology, data
-            analysis, and clear scientific communication.
+            I am Evan Kordovi, a B.S. Biology graduate from SDSU interested in lab
+            research, translational biology, antibody engineering, data analysis,
+            and documentation that helps research teams move with clarity.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#work">View Projects</a>
-            <a class="button secondary" href="#contact">Get in Touch</a>
+            <a
+              class="button secondary"
+              href="assets/evan-kordovi-resume.pdf"
+              download
+              aria-disabled="true"
+              data-placeholder-link
+            >Download Resume</a>
+            <a class="button tertiary" href="#contact">Contact</a>
           </div>
         </div>
       </section>
@@ -63,20 +86,28 @@
         <div class="section-inner two-column">
           <div>
             <p class="section-label">About</p>
-            <h2 id="about-title">Curious, precise, and happiest near a hard question.</h2>
+            <h2 id="about-title">Biology background, research instincts, and a bias toward clean documentation.</h2>
           </div>
           <div class="rich-text">
             <p>
-              I am interested in biological research that starts with careful
-              observation and becomes stronger through good documentation,
-              thoughtful analysis, and honest scientific storytelling.
+              I earned a B.S. in Biology from San Diego State University and have
+              undergraduate exposure to cancer biology and molecular biology research.
+              I am especially interested in antibody engineering, drug discovery,
+              oncology, rare disease, mental health and addiction, public health,
+              and aging.
             </p>
             <p>
-              My recent work has centered on organizing research materials,
-              turning messy information into usable outputs, and presenting
-              scientific experience in a way that feels specific, grounded, and
-              useful to the people reading it.
+              I am building practical skills in Python, SQL, R, statistics, data
+              organization, and scientific communication. My goal is to contribute
+              to research teams through careful bench-ready habits, readable
+              documentation, follow-through, and a willingness to learn quickly
+              without pretending to know more than I do.
             </p>
+            <ul class="about-list" aria-label="Research strengths">
+              <li>Careful organization of experimental notes, tables, and source material.</li>
+              <li>Interest in molecular mechanisms, translational biology, and therapeutic design.</li>
+              <li>Clear writing for lab-fit statements, research summaries, and technical narratives.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -85,65 +116,96 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="section-label">Selected Work</p>
-            <h2 id="work-title">Projects worth opening a second tab for.</h2>
+            <h2 id="work-title">Projects that show how I think through biology, data, and communication.</h2>
           </div>
 
           <figure class="research-figure" id="research-figure">
             <img
               src="assets/tweak-fn14-nfkb-biorender.png"
               alt="BioRender schematic of TWEAK-Fn14 and NF-kB signaling connected to COL6 expression and ovarian cancer cell behavior"
+              loading="lazy"
             />
             <figcaption>
               <strong>TWEAK-Fn14/NF-kB signaling model.</strong>
-              Schematic showing IkB phosphorylation and degradation, NF-kB
-              transcriptional activation, and the proposed connection between
-              COL6-associated stromal remodeling programs and ovarian cancer
-              cell behavior. Created with BioRender.com.
+              A scientific figure connecting Fn14 activation, NF-kB signaling,
+              COL6-associated stromal remodeling, and ovarian cancer cell behavior.
+              Created with BioRender.com as a way to make a pathway-level research
+              question easier to inspect and discuss.
             </figcaption>
           </figure>
 
-
           <div class="project-grid">
             <article class="project-card">
-              <div class="project-meta">
-                <span>Research</span>
-                <span>2026</span>
-              </div>
-              <h3>Ovarian Cancer Signal Model</h3>
+              <p class="project-tag">Antibody engineering exploration</p>
+              <h3>AHEAD / OrthoRep research map</h3>
               <p>
-                A visual summary of TWEAK-Fn14/NF-kB signaling, COL6-associated
-                expression changes, and the cellular programs that shape ovarian
-                cancer behavior.
+                A research exploration of AHEAD and OrthoRep as platforms for
+                continuous antibody evolution. The work connects yeast surface
+                display, FACS-based selection, antibody evolution, and the challenge
+                of optimizing binding, specificity, expression, and developability
+                at the same time.
               </p>
-              <a href="#contact" aria-label="Ask Evan about the Biology Research Summary project">Discuss project</a>
+              <ul class="skill-row" aria-label="Skills and tools used">
+                <li>AHEAD</li>
+                <li>OrthoRep</li>
+                <li>FACS</li>
+                <li>Developability</li>
+              </ul>
+              <a class="card-link" href="#contact" aria-label="Contact Evan about the AHEAD antibody engineering research exploration">Discuss research</a>
             </article>
 
             <article class="project-card">
-              <div class="project-meta">
-                <span>Data</span>
-                <span>2026</span>
-              </div>
-              <h3>Feature Analysis Workflow</h3>
+              <p class="project-tag">Cancer biology figure</p>
+              <h3>Ovarian cancer signaling model</h3>
               <p>
-                A spreadsheet analysis workflow for cleaning observations,
-                comparing groups, and turning raw feature data into outputs that
-                are easier to inspect, explain, and reuse.
+                A pathway-focused model of TWEAK-Fn14/NF-kB signaling, COL6 and
+                stromal remodeling, and how extracellular matrix changes may connect
+                to ovarian cancer cell behavior. The BioRender figure turns a dense
+                mechanism into a visual summary that can support lab discussion.
               </p>
-              <a href="#contact" aria-label="Ask Evan about the Feature Analysis Workflow project">Discuss project</a>
+              <ul class="skill-row" aria-label="Skills and tools used">
+                <li>Oncology</li>
+                <li>NF-kB</li>
+                <li>COL6</li>
+                <li>BioRender</li>
+              </ul>
+              <a class="card-link" href="#research-figure" aria-label="View Evan's ovarian cancer signaling model">View figure</a>
             </article>
 
             <article class="project-card">
-              <div class="project-meta">
-                <span>Writing</span>
-                <span>2026</span>
-              </div>
-              <h3>Scientific Application Materials</h3>
+              <p class="project-tag">Data organization</p>
+              <h3>Reusable scientific workflow structure</h3>
               <p>
-                Research statements, cover letters, and resume materials shaped
-                around evidence, lab fit, and a scientific story that sounds
-                specific rather than generic.
+                A workflow for taking messy research information and turning it
+                into structured tables that are easier to search, analyze, and
+                reuse. The emphasis is on SQL-, Excel-, and Python-ready organization
+                so future analysis starts from cleaner materials.
               </p>
-              <a href="#research-figure" aria-label="View Evan's ovarian cancer signaling model">View figure</a>
+              <ul class="skill-row" aria-label="Skills and tools used">
+                <li>Excel</li>
+                <li>SQL</li>
+                <li>Python-ready data</li>
+                <li>QA</li>
+              </ul>
+              <a class="card-link" href="https://github.com/ekordovi" target="_blank" rel="noreferrer">View GitHub</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Scientific writing</p>
+              <h3>Research and application materials</h3>
+              <p>
+                Research statements, cover letters, CV content, and lab-fit writing
+                built around evidence rather than vague enthusiasm. The goal is to
+                translate technical interests into clear communication for research
+                groups and early-career opportunities.
+              </p>
+              <ul class="skill-row" aria-label="Skills and tools used">
+                <li>Research statements</li>
+                <li>Cover letters</li>
+                <li>Lab fit</li>
+                <li>Editing</li>
+              </ul>
+              <a class="card-link" href="#contact" aria-label="Contact Evan about scientific writing and application materials">Talk writing</a>
             </article>
           </div>
         </div>
@@ -153,41 +215,55 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="section-label">Experience</p>
-            <h2 id="experience-title">A compact resume snapshot.</h2>
+            <h2 id="experience-title">A concise resume snapshot.</h2>
           </div>
 
           <div class="timeline">
             <article class="timeline-item">
-              <p class="timeline-date">Current</p>
+              <p class="timeline-date">Research preparation</p>
               <div>
-                <h3>Research and academic preparation</h3>
-                <p>
-                  Developing biology research interests, scientific writing, and
-                  analysis habits for research-focused roles and academic
-                  opportunities.
-                </p>
+                <h3>Biology research readiness</h3>
+                <ul>
+                  <li>B.S. Biology, San Diego State University.</li>
+                  <li>Undergraduate exposure to cancer biology and molecular biology research questions.</li>
+                  <li>Interested in oncology, antibody engineering, drug discovery, rare disease, aging, and public-health-adjacent biology.</li>
+                </ul>
               </div>
             </article>
 
             <article class="timeline-item">
-              <p class="timeline-date">Recent</p>
+              <p class="timeline-date">SDSU House Lab</p>
               <div>
-                <h3>Data organization and documentation projects</h3>
-                <p>
-                  Built cleaner materials from raw information, with attention
-                  to structure, traceability, and presentation quality.
-                </p>
+                <h3>Undergraduate lab exposure</h3>
+                <ul>
+                  <li>Built familiarity with molecular biology and cancer-biology concepts through lab-linked research exposure.</li>
+                  <li>Focused on careful reading, mechanism-level thinking, and translating biological pathways into clear written and visual summaries.</li>
+                  <li>Continuing to develop the practical habits expected in research assistant and lab technician roles.</li>
+                </ul>
               </div>
             </article>
 
             <article class="timeline-item">
-              <p class="timeline-date">Next</p>
+              <p class="timeline-date">Data skills</p>
               <div>
-                <h3>Research assistant roles and collaborations</h3>
-                <p>
-                  Looking for research environments where careful observation,
-                  persistence, communication, and technical growth all matter.
-                </p>
+                <h3>Computational and workflow skill building</h3>
+                <ul>
+                  <li>Growing ability in Python, SQL, R, statistics, spreadsheet cleanup, and reproducible data organization.</li>
+                  <li>Interested in turning raw notes, assay outputs, and literature-derived information into structured materials that are easier to inspect.</li>
+                  <li>Comfortable learning tools by building small, concrete projects around real research questions.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-date">Communication</p>
+              <div>
+                <h3>Scientific writing and regulated-work awareness</h3>
+                <ul>
+                  <li>Experience shaping research summaries, cover letters, and lab-fit statements from evidence rather than filler.</li>
+                  <li>Developing familiarity with documentation-heavy environments, including SOP/GMP language and the importance of traceable work.</li>
+                  <li>Looking for teams where careful notes, follow-through, and honest learning are valued.</li>
+                </ul>
               </div>
             </article>
           </div>
@@ -198,13 +274,17 @@
         <div class="section-inner contact-layout">
           <div>
             <p class="section-label">Contact</p>
-            <h2 id="contact-title">Let this be the link that makes the resume feel alive.</h2>
+            <h2 id="contact-title">Open to research assistant, lab technician, data-support, and biology-focused project opportunities.</h2>
+            <p class="contact-copy">
+              I am most interested in roles where careful execution, documentation,
+              biological curiosity, and communication all matter.
+            </p>
           </div>
-          <div class="contact-panel">
+          <address class="contact-panel">
             <a href="mailto:ekordovi@gmail.com">ekordovi@gmail.com</a>
             <a href="https://www.linkedin.com/in/evan-kordovi-0370130-/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/ekordovi" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          </address>
         </div>
       </section>
     </main>

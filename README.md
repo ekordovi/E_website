@@ -10,9 +10,10 @@ Live site target:
 
 Review these fields in `index.html` before putting the link on a resume:
 
-- LinkedIn URL: currently points to a LinkedIn people search because an exact profile URL was not verified.
-- Project titles and descriptions.
-- Experience entries.
+- Resume PDF: add `assets/evan-kordovi-resume.pdf` to enable the hero download button.
+- LinkedIn URL: currently points to `https://www.linkedin.com/in/evan-kordovi-0370130-/`.
+- Project links: add dedicated project pages or repository links as those materials become public.
+- Experience entries: keep these aligned with the current resume and avoid inflating early-career roles.
 
 ## Publish on GitHub Pages
 
