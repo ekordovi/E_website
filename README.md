@@ -10,9 +10,9 @@ Live site target:
 
 Review these fields in `index.html` before putting the link on a resume:
 
-- Resume PDF: add `assets/evan-kordovi-resume.pdf` to enable the hero download button.
+- Resume PDF: `assets/evan-kordovi-resume.pdf` powers the hero download button.
 - LinkedIn URL: currently points to `https://www.linkedin.com/in/evan-kordovi-0370130-/`.
-- Project links: add dedicated project pages or repository links as those materials become public.
+- Work links: add dedicated project pages, figures, PDFs, or writing samples only as those materials become public and worth showing.
 - Experience entries: keep these aligned with the current resume and avoid inflating early-career roles.
 
 ## Publish on GitHub Pages
@@ -35,8 +35,8 @@ Then visit:
 
 `http://localhost:8000`
 
-## Generated Asset
+## Visual Asset
 
-The hero image was generated for this project and saved at:
+The site currently uses this lab-linked BioRender figure as its primary visual:
 
-`assets/portfolio-hero.png`
+`assets/tweak-fn14-nfkb-biorender.png`

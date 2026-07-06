@@ -92,7 +92,7 @@ button:focus-visible {
   justify-content: space-between;
   width: 100%;
   padding: 18px 6vw;
-  color: var(--surface);
+  color: var(--ink);
   transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -183,10 +183,28 @@ button:focus-visible {
 
 .hero {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.8fr);
+  gap: 52px;
+  align-items: center;
   min-height: 86svh;
+  padding: 124px 6vw 84px;
   overflow: hidden;
-  color: var(--surface);
+  color: var(--ink);
+  background: var(--paper);
   isolation: isolate;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(13, 107, 100, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 107, 100, 0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  mask-image: linear-gradient(90deg, black, transparent 70%);
 }
 
 .hero::after {
@@ -202,31 +220,49 @@ button:focus-visible {
   opacity: 0.95;
 }
 
-.hero-image,
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-image {
-  object-fit: cover;
-  object-position: center right;
-  filter: saturate(0.96) contrast(1.04);
-}
-
-.hero-overlay {
-  background:
-    linear-gradient(90deg, rgba(15, 23, 21, 0.92) 0%, rgba(15, 23, 21, 0.78) 42%, rgba(15, 23, 21, 0.25) 100%),
-    linear-gradient(0deg, rgba(15, 23, 21, 0.55), rgba(15, 23, 21, 0.06) 46%);
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
-  width: min(820px, 88vw);
-  padding: 148px 0 112px 6vw;
+  width: min(820px, 100%);
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-visual img {
+  width: 100%;
+  border: 1px solid #e4e8ed;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.hero-visual figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.hero-visual span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--coral);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-visual strong {
+  display: block;
+  color: var(--ink);
+  line-height: 1.35;
 }
 
 .eyebrow,
@@ -243,7 +279,7 @@ button:focus-visible {
 .eyebrow {
   max-width: 640px;
   margin-bottom: 18px;
-  color: #f2d27d;
+  color: var(--coral);
 }
 
 h1,
@@ -277,7 +313,7 @@ h3 {
 .hero-copy {
   max-width: 690px;
   margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--muted);
   font-size: 1.16rem;
 }
 
@@ -314,17 +350,17 @@ h3 {
 
 .button.secondary,
 .button.tertiary {
-  color: var(--surface);
+  color: var(--teal-dark);
 }
 
 .button.secondary {
-  border-color: rgba(255, 255, 255, 0.68);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--teal);
+  background: rgba(13, 107, 100, 0.08);
 }
 
 .button.tertiary {
-  border-color: rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.02);
+  border-color: var(--line-strong);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .button:hover,
@@ -347,13 +383,8 @@ h3 {
 .button.secondary:focus-visible,
 .button.tertiary:hover,
 .button.tertiary:focus-visible {
-  border-color: var(--surface);
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.button[aria-disabled="true"] {
-  cursor: not-allowed;
-  opacity: 0.72;
+  border-color: var(--teal-dark);
+  background: rgba(13, 107, 100, 0.14);
 }
 
 .section {
@@ -623,7 +654,9 @@ h3 {
   }
 
   .hero {
-    min-height: 84svh;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 118px 5vw 72px;
   }
 
   .hero::after {
@@ -632,15 +665,12 @@ h3 {
     width: 180px;
   }
 
-  .hero-overlay {
-    background:
-      linear-gradient(90deg, rgba(15, 23, 21, 0.93), rgba(15, 23, 21, 0.66)),
-      linear-gradient(0deg, rgba(15, 23, 21, 0.5), transparent 45%);
-  }
-
   .hero-content {
     width: min(720px, 90vw);
-    padding: 132px 0 86px 5vw;
+  }
+
+  .hero-visual {
+    max-width: 620px;
   }
 
   h1 {
@@ -677,16 +707,17 @@ h3 {
   }
 
   .hero {
-    min-height: 88svh;
+    padding-top: 104px;
+    padding-bottom: 60px;
   }
 
-  .hero-image {
-    object-position: 64% center;
+  .hero::after,
+  .hero-visual {
+    display: none;
   }
 
   .hero-content {
-    padding-top: 106px;
-    padding-bottom: 58px;
+    width: 100%;
   }
 
   h1 {

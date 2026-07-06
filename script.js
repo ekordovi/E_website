@@ -2,7 +2,6 @@ const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const year = document.querySelector("[data-year]");
-const placeholderLinks = document.querySelectorAll("[data-placeholder-link]");
 
 const updateHeader = () => {
   const isOpen = siteNav.classList.contains("is-open");
@@ -37,13 +36,6 @@ document.addEventListener("keydown", (event) => {
     closeNav();
     navToggle.focus();
   }
-});
-
-placeholderLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    link.setAttribute("title", "Add assets/evan-kordovi-resume.pdf to enable this download.");
-  });
 });
 
 year.textContent = new Date().getFullYear();
