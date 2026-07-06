@@ -185,8 +185,8 @@ button:focus-visible {
   position: relative;
   display: grid;
   align-items: center;
-  min-height: 72svh;
-  padding: 112px 6vw 76px;
+  min-height: 64svh;
+  padding: 104px 6vw 64px;
   overflow: hidden;
   color: var(--ink);
   background:
@@ -253,7 +253,7 @@ p {
 h1 {
   max-width: 800px;
   margin-bottom: 22px;
-  font-size: 4rem;
+  font-size: 3.55rem;
   line-height: 1;
   letter-spacing: 0;
 }
@@ -276,6 +276,33 @@ h3 {
   margin-bottom: 30px;
   color: var(--muted);
   font-size: 1.16rem;
+}
+
+.hero-points {
+  display: grid;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-points li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.hero-points li::before {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--teal);
+  content: "";
 }
 
 .hero-actions,
@@ -361,6 +388,10 @@ h3 {
   background: var(--surface);
 }
 
+.skills-band {
+  background: #eef3ef;
+}
+
 .two-column,
 .contact-layout {
   display: grid;
@@ -406,6 +437,31 @@ h3 {
   margin: 16px 0 0;
   color: var(--muted);
   font-size: 1.02rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 1px 0 rgba(23, 33, 31, 0.05);
+}
+
+.skill-card h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.skill-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
 }
 
 .research-figure {
@@ -482,6 +538,16 @@ h3 {
   color: var(--muted);
 }
 
+.evidence-list {
+  margin: 16px 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.evidence-list li {
+  margin-bottom: 8px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -547,6 +613,19 @@ h3 {
 
 .project-card p:not(.project-tag) {
   color: var(--muted);
+}
+
+.artifact {
+  margin: 16px 0 20px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--teal);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: #f2f7f4;
+  font-size: 0.94rem;
+}
+
+.artifact strong {
+  color: var(--ink);
 }
 
 .skill-row {
@@ -707,7 +786,7 @@ h3 {
 
   .hero {
     min-height: auto;
-    padding: 108px 5vw 66px;
+    padding: 96px 5vw 58px;
   }
 
   .hero::after {
@@ -721,7 +800,7 @@ h3 {
   }
 
   h1 {
-    font-size: 3.1rem;
+    font-size: 2.75rem;
   }
 
   h2 {
@@ -735,7 +814,8 @@ h3 {
   .two-column,
   .contact-layout,
   .figure-layout,
-  .project-grid {
+  .project-grid,
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
@@ -754,8 +834,8 @@ h3 {
   }
 
   .hero {
-    padding-top: 94px;
-    padding-bottom: 34px;
+    padding-top: 88px;
+    padding-bottom: 30px;
   }
 
   .hero::after {
@@ -766,8 +846,12 @@ h3 {
     width: 100%;
   }
 
+  .hero-points {
+    display: none;
+  }
+
   h1 {
-    font-size: 2.18rem;
+    font-size: 2rem;
     line-height: 1.04;
   }
 
