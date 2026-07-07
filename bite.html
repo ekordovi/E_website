@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BiTE Functional Screening Analysis project artifact showing Python, pandas, CSV cleanup, feature enrichment, and biological data interpretation."
+    />
+    <meta property="og:title" content="BiTE Functional Screening Analysis | Evan Kordovi" />
+    <meta
+      property="og:description"
+      content="Visual project artifact for a Python analysis of CD19xCD3 BiTE functional screening data, including feature enrichment and generated figures."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ekordovi.github.io/E_website/bite.html" />
+    <title>BiTE Functional Screening Analysis | Evan Kordovi</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2317211f'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23d8a33d'%3EEK%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header artifact-header" data-header>
+      <a class="brand" href="index.html#top" aria-label="Evan Kordovi home">
+        <span class="brand-mark">EK</span>
+        <span>Evan Kordovi</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="artifact-page">
+      <section class="artifact-hero" aria-labelledby="artifact-title">
+        <div class="artifact-hero-copy">
+          <p class="eyebrow">Biology data analysis artifact</p>
+          <h1 id="artifact-title">BiTE Functional Screening Analysis</h1>
+          <p>
+            A Python and pandas analysis of cleaned supplementary data from a
+            CD19xCD3 BiTE droplet microfluidics screen. The goal was to compare
+            starting-library composition against functional hits and identify which
+            design features were enriched after screening.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#figures">View Figures</a>
+            <a class="button secondary" href="#findings">View Findings</a>
+            <a class="button tertiary" href="index.html#work">Back to Portfolio</a>
+          </div>
+        </div>
+        <div class="artifact-facts" aria-label="BiTE analysis project summary">
+          <div>
+            <span>Built With</span>
+            <strong>Python, pandas, NumPy, CSV files, Jupyter notebook, simple figure generation</strong>
+          </div>
+          <div>
+            <span>Core Analysis</span>
+            <strong>Feature enrichment ratios across orientation, linker, CD3 scFv, and CD19 scFv categories</strong>
+          </div>
+          <div>
+            <span>Portfolio Signal</span>
+            <strong>Biology-focused data cleanup, reproducible analysis, figure generation, and careful interpretation without overclaiming experimental ownership.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="artifact-section" aria-labelledby="question-title">
+        <div class="artifact-section-heading">
+          <p class="section-label">Analysis Question</p>
+          <h2 id="question-title">Which BiTE design features were overrepresented after functional screening?</h2>
+          <p>
+            The project recomputes enrichment as the functional-hit percentage divided
+            by the starting-library percentage. Values above 1.0 indicate enrichment
+            among functional hits; values below 1.0 indicate depletion.
+          </p>
+        </div>
+        <div class="takeaway-grid">
+          <article>
+            <h3>Input</h3>
+            <p>Cleaned tables for starting-library features, functional-hit features, clone abundance, and dose-response function.</p>
+          </article>
+          <article>
+            <h3>Processing</h3>
+            <p>Merged feature tables, calculated enrichment ratios, ranked categories, and regenerated visual summaries.</p>
+          </article>
+          <article>
+            <h3>Output</h3>
+            <p>Feature-enrichment table plus four PNG figures for orientation, linker, clone abundance, and functional response.</p>
+          </article>
+          <article>
+            <h3>Scope</h3>
+            <p>This is a secondary data-analysis project using cleaned supplementary data, not a claim of direct BiTE experimental work.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="artifact-section" id="findings" aria-labelledby="findings-title">
+        <div class="artifact-section-heading">
+          <p class="section-label">Main Findings</p>
+          <h2 id="findings-title">The analysis points to enriched orientation and CD3 binder patterns.</h2>
+        </div>
+        <div class="findings-list">
+          <article>
+            <h3>Orientation</h3>
+            <p><strong>CD19VL-VH-CD3VH-VL</strong> increased from 43.58% of the starting library to 81.82% of functional hits, a 1.88x enrichment.</p>
+          </article>
+          <article>
+            <h3>CD3 scFv</h3>
+            <p><strong>L2K</strong> and <strong>TRX4</strong> were the clearest enriched CD3 binders, while h38E4.v1 was strongly depleted.</p>
+          </article>
+          <article>
+            <h3>CD19 scFv</h3>
+            <p><strong>B43</strong> showed the strongest enrichment among CD19 binders, increasing from 18.69% to 26.25%.</p>
+          </article>
+          <article>
+            <h3>Linkers</h3>
+            <p>Linker effects were more modest, with GGGGSGGS and AEAAAKAEAAAKA slightly enriched relative to the starting library.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="artifact-section" id="figures" aria-labelledby="figures-title">
+        <div class="artifact-section-heading">
+          <p class="section-label">Generated Figures</p>
+          <h2 id="figures-title">Visual outputs from the notebook.</h2>
+          <p>
+            These figures were generated from cleaned CSV inputs so the analysis can be
+            rerun and checked instead of existing only as a written summary.
+          </p>
+        </div>
+
+        <div class="screen-stack">
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Feature enrichment</p>
+              <h3>Starting library vs. functional hits by orientation.</h3>
+              <p>
+                This figure compares orientation prevalence before and after functional
+                screening, showing the strongest shift toward CD19VL-VH-CD3VH-VL.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/bite/starting_vs_functional_orientation.png"
+                alt="Grouped bar chart comparing starting library and functional hit percentages across BiTE orientation categories."
+                loading="lazy"
+              />
+              <figcaption>Orientation comparison across starting-library and functional-hit percentages.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Feature enrichment</p>
+              <h3>Starting library vs. functional hits by linker.</h3>
+              <p>
+                The linker comparison shows smaller shifts than orientation or CD3 scFv,
+                which is useful context when interpreting which design variables changed most.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/bite/starting_vs_functional_linkers.png"
+                alt="Grouped bar chart comparing starting library and functional hit percentages across BiTE linker categories."
+                loading="lazy"
+              />
+              <figcaption>Linker comparison showing modest enrichment and depletion patterns.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Clone abundance</p>
+              <h3>Relative abundance of recovered clones.</h3>
+              <p>
+                The clone-abundance view separates top recovered clones from lower-abundance
+                candidates and gives the analysis a concrete output beyond feature ratios.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/bite/clone_abundance.png"
+                alt="Bar chart showing relative abundance of recovered clones and controls."
+                loading="lazy"
+              />
+              <figcaption>Clone abundance summary from the cleaned screening dataset.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Functional response</p>
+              <h3>Clone response compared with blinatumomab.</h3>
+              <p>
+                The dose-response figure connects feature-level enrichment back to
+                functional assay readouts, while keeping the interpretation bounded to
+                the cleaned supplementary dataset.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/bite/clone5_clone6_blinatumomab_function.png"
+                alt="Dose-response plot comparing Clone 5, Clone 6, and blinatumomab functional response across concentrations."
+                loading="lazy"
+              />
+              <figcaption>Functional response comparison for selected clones and blinatumomab.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="artifact-section takeaway-section" aria-labelledby="takeaway-title">
+        <div class="artifact-section-heading">
+          <p class="section-label">Technical Takeaways</p>
+          <h2 id="takeaway-title">What this project is meant to show.</h2>
+        </div>
+        <div class="takeaway-grid">
+          <article>
+            <h3>Biology data framing</h3>
+            <p>Translated a therapeutic-screening question into categories, ratios, and figures that can be reviewed quickly.</p>
+          </article>
+          <article>
+            <h3>Reproducible workflow</h3>
+            <p>Used cleaned CSV inputs and a notebook workflow to recompute tables and regenerate figures.</p>
+          </article>
+          <article>
+            <h3>Data organization</h3>
+            <p>Separated raw data, cleaned tables, SQL schema/query files, notebook code, and output visuals.</p>
+          </article>
+          <article>
+            <h3>Scientific communication</h3>
+            <p>Summarized results with caveats so the project reads as analysis practice, not inflated research ownership.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Evan Kordovi</p>
+      <a href="index.html#work">Back to selected work</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
