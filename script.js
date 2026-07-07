@@ -2,7 +2,6 @@ const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const year = document.querySelector("[data-year]");
-const detailLinks = document.querySelectorAll("[data-open-details]");
 
 const updateHeader = () => {
   const isOpen = siteNav.classList.contains("is-open");
@@ -37,15 +36,6 @@ document.addEventListener("keydown", (event) => {
     closeNav();
     navToggle.focus();
   }
-});
-
-detailLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    const details = document.getElementById(link.dataset.openDetails);
-    if (details instanceof HTMLDetailsElement) {
-      details.open = true;
-    }
-  });
 });
 
 year.textContent = new Date().getFullYear();
