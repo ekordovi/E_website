@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Canonical and non-canonical NF-kB pathway comparison</title>
+  <desc id="desc">Diagram comparing canonical NF-kB signaling through RelA and p50 with non-canonical NF-kB signaling through RelB and p52, including tumor microenvironment outputs.</desc>
+  <defs>
+    <marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0d6b64" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#385b80" />
+    </marker>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17211f" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .bg { fill: #f7f4ee; }
+      .panel { fill: #ffffff; stroke: #ddd8cb; stroke-width: 2; filter: url(#soft-shadow); }
+      .panel-accent-a { fill: #eef7f4; stroke: #0d6b64; stroke-width: 2; }
+      .panel-accent-b { fill: #eef2f7; stroke: #385b80; stroke-width: 2; }
+      .title { fill: #17211f; font: 800 34px Arial, sans-serif; }
+      .subtitle { fill: #60706c; font: 600 17px Arial, sans-serif; }
+      .section-title { fill: #17211f; font: 800 25px Arial, sans-serif; }
+      .small-title { fill: #17211f; font: 800 17px Arial, sans-serif; }
+      .label { fill: #30413d; font: 700 14px Arial, sans-serif; }
+      .text { fill: #30413d; font: 500 14px Arial, sans-serif; }
+      .muted { fill: #60706c; font: 500 13px Arial, sans-serif; }
+      .node { fill: #ffffff; stroke: #c7cfc8; stroke-width: 2; }
+      .receptor-a { fill: #d9eee9; stroke: #0d6b64; stroke-width: 2; }
+      .receptor-b { fill: #dde8f5; stroke: #385b80; stroke-width: 2; }
+      .protein-a { fill: #f1c6be; stroke: #b84c3d; stroke-width: 2; }
+      .protein-b { fill: #dce7f4; stroke: #385b80; stroke-width: 2; }
+      .complex { fill: #f7e6b7; stroke: #d8a33d; stroke-width: 2; }
+      .inhibitor { fill: #f8d7d1; stroke: #b84c3d; stroke-width: 2; }
+      .nucleus { fill: #f3f0e8; stroke: #c7cfc8; stroke-width: 2; }
+      .arrow-a { stroke: #0d6b64; stroke-width: 3; fill: none; marker-end: url(#arrow-teal); }
+      .arrow-b { stroke: #385b80; stroke-width: 3; fill: none; marker-end: url(#arrow-blue); }
+      .dash { stroke-dasharray: 7 7; }
+      .divider { stroke: #ddd8cb; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1280" height="760" rx="0" />
+  <text class="title" x="640" y="54" text-anchor="middle">NF-kB Signaling Context in Ovarian Cancer Biology</text>
+  <text class="subtitle" x="640" y="84" text-anchor="middle">Canonical RelA/p50 and non-canonical RelB/p52 programs can shape inflammatory signaling, stromal remodeling, and tumor microenvironment behavior.</text>
+
+  <rect class="panel" x="48" y="118" width="570" height="500" rx="16" />
+  <rect class="panel" x="662" y="118" width="570" height="500" rx="16" />
+  <line class="divider" x1="640" y1="118" x2="640" y2="618" />
+
+  <text class="section-title" x="333" y="158" text-anchor="middle">Canonical pathway</text>
+  <text class="subtitle" x="333" y="183" text-anchor="middle">Rapid RelA/p50 response to inflammatory stimuli</text>
+  <text class="section-title" x="947" y="158" text-anchor="middle">Non-canonical pathway</text>
+  <text class="subtitle" x="947" y="183" text-anchor="middle">Slower RelB/p52 response tied to persistent remodeling signals</text>
+
+  <rect class="receptor-a" x="105" y="220" width="84" height="42" rx="8" />
+  <rect class="receptor-a" x="205" y="220" width="84" height="42" rx="8" />
+  <rect class="receptor-a" x="305" y="220" width="84" height="42" rx="8" />
+  <rect class="receptor-a" x="405" y="220" width="84" height="42" rx="8" />
+  <text class="label" x="147" y="246" text-anchor="middle">TNFR</text>
+  <text class="label" x="247" y="246" text-anchor="middle">TLR</text>
+  <text class="label" x="347" y="246" text-anchor="middle">IL-1R</text>
+  <text class="label" x="447" y="246" text-anchor="middle">TCR/BCR</text>
+
+  <path class="arrow-a" d="M147 264 C160 292 188 304 222 314" />
+  <path class="arrow-a" d="M247 264 C252 288 258 303 275 318" />
+  <path class="arrow-a" d="M347 264 C338 292 320 304 302 318" />
+  <path class="arrow-a" d="M447 264 C420 302 370 318 333 330" />
+
+  <rect class="complex" x="240" y="325" width="186" height="58" rx="16" />
+  <text class="small-title" x="333" y="350" text-anchor="middle">IKK complex</text>
+  <text class="muted" x="333" y="371" text-anchor="middle">IKK alpha / IKK beta / NEMO</text>
+
+  <path class="arrow-a" d="M333 384 L333 426" />
+  <rect class="inhibitor" x="245" y="424" width="176" height="52" rx="26" />
+  <text class="small-title" x="333" y="456" text-anchor="middle">IkB alpha degradation</text>
+  <circle class="protein-a" cx="264" cy="518" r="34" />
+  <circle class="protein-a" cx="344" cy="518" r="34" />
+  <text class="small-title" x="264" y="524" text-anchor="middle">RelA</text>
+  <text class="small-title" x="344" y="524" text-anchor="middle">p50</text>
+  <path class="arrow-a" d="M333 477 L320 492" />
+
+  <ellipse class="nucleus" cx="333" cy="585" rx="120" ry="46" />
+  <text class="small-title" x="333" y="577" text-anchor="middle">Nuclear RelA/p50</text>
+  <text class="muted" x="333" y="600" text-anchor="middle">acute inflammatory transcription</text>
+  <path class="arrow-a" d="M320 552 L320 565" />
+
+  <rect class="panel-accent-a" x="76" y="438" width="128" height="146" rx="16" />
+  <text class="small-title" x="140" y="466" text-anchor="middle">Typical outputs</text>
+  <text class="text" x="96" y="493">- cytokines</text>
+  <text class="text" x="96" y="518">- survival signals</text>
+  <text class="text" x="96" y="543">- transient stress</text>
+  <text class="text" x="96" y="568">  responses</text>
+
+  <rect class="receptor-b" x="720" y="220" width="84" height="42" rx="8" />
+  <rect class="receptor-b" x="820" y="220" width="84" height="42" rx="8" />
+  <rect class="receptor-b" x="920" y="220" width="84" height="42" rx="8" />
+  <rect class="receptor-b" x="1020" y="220" width="84" height="42" rx="8" />
+  <text class="label" x="762" y="246" text-anchor="middle">BAFFR</text>
+  <text class="label" x="862" y="246" text-anchor="middle">CD40</text>
+  <text class="label" x="962" y="246" text-anchor="middle">LTBR</text>
+  <text class="label" x="1062" y="246" text-anchor="middle">RANK</text>
+
+  <path class="arrow-b" d="M762 264 C780 295 810 307 845 318" />
+  <path class="arrow-b" d="M862 264 C864 292 868 306 882 320" />
+  <path class="arrow-b" d="M962 264 C948 294 924 310 904 321" />
+  <path class="arrow-b" d="M1062 264 C1030 305 976 322 930 332" />
+
+  <circle class="node" cx="884" cy="346" r="34" />
+  <text class="small-title" x="884" y="352" text-anchor="middle">NIK</text>
+  <path class="arrow-b" d="M884 381 L884 421" />
+  <rect class="complex" x="802" y="420" width="164" height="54" rx="16" />
+  <text class="small-title" x="884" y="442" text-anchor="middle">IKK alpha</text>
+  <text class="muted" x="884" y="462" text-anchor="middle">p100 processing</text>
+
+  <path class="arrow-b" d="M884 475 L884 505" />
+  <ellipse class="protein-b" cx="824" cy="522" rx="44" ry="32" />
+  <ellipse class="protein-b" cx="944" cy="522" rx="44" ry="32" />
+  <text class="small-title" x="824" y="528" text-anchor="middle">RelB</text>
+  <text class="small-title" x="944" y="528" text-anchor="middle">p52</text>
+  <path class="arrow-b" d="M884 535 L884 564" />
+  <ellipse class="nucleus" cx="884" cy="592" rx="128" ry="46" />
+  <text class="small-title" x="884" y="584" text-anchor="middle">Nuclear RelB/p52</text>
+  <text class="muted" x="884" y="607" text-anchor="middle">persistent remodeling program</text>
+
+  <rect class="panel-accent-b" x="1044" y="430" width="150" height="164" rx="16" />
+  <text class="small-title" x="1119" y="458" text-anchor="middle">TME context</text>
+  <text class="text" x="1064" y="486">- COL6 / ECM</text>
+  <text class="text" x="1064" y="511">- stromal</text>
+  <text class="text" x="1064" y="536">  remodeling</text>
+  <text class="text" x="1064" y="561">- immune niche</text>
+
+  <rect class="panel" x="120" y="650" width="1040" height="64" rx="16" />
+  <text class="small-title" x="640" y="676" text-anchor="middle">Interpretation for House Lab case study</text>
+  <text class="subtitle" x="640" y="701" text-anchor="middle">RelA-associated canonical signaling and RelB-associated non-canonical signaling provide a framework for thinking about ovarian cancer cell behavior, COL6 expression, stromal remodeling, and tumor microenvironment state.</text>
+</svg>
