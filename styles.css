@@ -465,8 +465,8 @@ h3 {
 }
 
 .research-figure {
-  margin: 22px 0 0;
-  padding: 22px;
+  margin: 0;
+  padding: 26px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -641,6 +641,19 @@ h3 {
   color: var(--muted);
 }
 
+.lab-notes-band {
+  background: var(--surface);
+}
+
+.lab-notes-band .section-heading {
+  max-width: 720px;
+}
+
+.lab-notes-band .research-figure {
+  border-color: var(--line-strong);
+  background: #fbfaf6;
+}
+
 .artifact {
   margin: 16px 0 20px;
   padding: 12px 14px;
@@ -694,7 +707,7 @@ h3 {
 }
 
 .timeline-band {
-  background: #e8efea;
+  background: var(--paper);
 }
 
 .timeline {
@@ -707,14 +720,15 @@ h3 {
   grid-template-columns: 180px minmax(0, 1fr);
   gap: 28px;
   padding: 26px;
-  border-left: 5px solid var(--teal);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--blue);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: 0 1px 0 rgba(23, 33, 31, 0.05);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
 }
 
 .timeline-date {
-  color: var(--teal-dark);
+  color: var(--blue);
 }
 
 .timeline-item h3 {
@@ -728,8 +742,8 @@ h3 {
 .contact-section {
   color: var(--surface);
   background:
-    linear-gradient(120deg, rgba(13, 107, 100, 0.28), transparent 34%),
-    var(--ink);
+    linear-gradient(120deg, rgba(216, 163, 61, 0.18), transparent 36%),
+    #1f2423;
 }
 
 .contact-section .section-label {
