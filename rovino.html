@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RoVino Inventory Management System project artifact showing a Flask and SQLite inventory website with CRUD workflows, low-stock alerts, and restock history."
+    />
+    <meta property="og:title" content="RoVino Inventory Management System | Evan Kordovi" />
+    <meta
+      property="og:description"
+      content="Visual project artifact for a Flask and SQLite inventory website built around structured records, CRUD workflows, low-stock alerts, and restock history."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ekordovi.github.io/E_website/rovino.html" />
+    <title>RoVino Inventory Management System | Evan Kordovi</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2317211f'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23d8a33d'%3EEK%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header artifact-header" data-header>
+      <a class="brand" href="index.html#top" aria-label="Evan Kordovi home">
+        <span class="brand-mark">EK</span>
+        <span>Evan Kordovi</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="artifact-page">
+      <section class="artifact-hero" aria-labelledby="artifact-title">
+        <div class="artifact-hero-copy">
+          <p class="eyebrow">Project artifact</p>
+          <h1 id="artifact-title">RoVino Inventory Management System</h1>
+          <p>
+            A local Flask and SQLite web application built to organize wine and bar
+            inventory through structured records, CRUD workflows, low-stock alerts,
+            restock history, and basic access-control concepts.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#screens">View Screens</a>
+            <a class="button secondary" href="https://github.com/ekordovi/RoVino_Inventory" target="_blank" rel="noreferrer">View GitHub Project</a>
+            <a class="button tertiary" href="index.html#work">Back to Portfolio</a>
+          </div>
+        </div>
+        <div class="artifact-facts" aria-label="RoVino project summary">
+          <div>
+            <span>Built With</span>
+            <strong>Python, Flask, SQLite, SQL, HTML/CSS, Bootstrap</strong>
+          </div>
+          <div>
+            <span>Core Workflows</span>
+            <strong>Login, dashboard, search, add/update item, low-stock alerts, restock history</strong>
+          </div>
+          <div>
+            <span>Portfolio Signal</span>
+            <strong>Database-backed workflow organization relevant to lab inventory, sample tracking, and biology data-support roles.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="artifact-section workflow-section" aria-labelledby="workflow-title">
+        <div class="artifact-section-heading">
+          <p class="section-label">Workflow</p>
+          <h2 id="workflow-title">How the app turns inventory actions into trackable records.</h2>
+        </div>
+        <figure class="artifact-figure workflow-figure">
+          <img
+            src="assets/rovino/image6.png"
+            alt="RoVino workflow diagram showing user login, inventory dashboard, add or update item, SQLite database, alerts, and history."
+            loading="eager"
+          />
+          <figcaption>RoVino workflow: authenticated access leads into dashboard review, record updates, database storage, alerts, and history.</figcaption>
+        </figure>
+      </section>
+
+      <section class="artifact-section" aria-labelledby="screens-title" id="screens">
+        <div class="artifact-section-heading">
+          <p class="section-label">Website Screens</p>
+          <h2 id="screens-title">The screens show the actual project, not just the code repository.</h2>
+          <p>
+            These screenshots are included so an employer can quickly see the interface,
+            data structure, and workflow logic behind the RoVino project.
+          </p>
+        </div>
+
+        <div class="screen-stack">
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Inventory dashboard</p>
+              <h3>Searchable inventory records with low-stock labels and item actions.</h3>
+              <p>
+                The main dashboard organizes inventory by category, displays item-level
+                fields, and surfaces action buttons for editing, deleting, and restocking
+                records.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/rovino/image1.png"
+                alt="RoVino dashboard showing category filters, a searchable inventory table, low-stock labels, and item action buttons."
+                loading="lazy"
+              />
+              <figcaption>Dashboard view with category filters, search, inventory table, low-stock labels, and item actions.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Access-control concept</p>
+              <h3>Login screen before inventory access.</h3>
+              <p>
+                The login page shows the project was built with controlled access in mind,
+                instead of exposing the inventory dashboard directly.
+              </p>
+            </div>
+            <figure class="artifact-figure portrait-shot">
+              <img
+                src="assets/rovino/image3.png"
+                alt="RoVino login screen with username and password fields and a sign-in button."
+                loading="lazy"
+              />
+              <figcaption>Login screen with username and password fields.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Data-entry workflow</p>
+              <h3>Add-item form for structured inventory records.</h3>
+              <p>
+                The add-item workflow captures category, item details, quantity, price,
+                alert threshold, and storage location so records can be reused and updated
+                consistently.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/rovino/image4.png"
+                alt="RoVino add-item form with category tiles, required fields, quantity, price, low-stock alert, and storage location."
+                loading="lazy"
+              />
+              <figcaption>Add-item workflow with category-specific fields and low-stock threshold setup.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Maintenance workflow</p>
+              <h3>Update screen for changing records over time.</h3>
+              <p>
+                The update view keeps inventory maintenance separate from initial entry,
+                which makes the app behave like a real tracking tool rather than a static
+                list.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/rovino/image5.png"
+                alt="RoVino update-item form with category, item name, quantity, price, low-stock alert, cancel, and update buttons."
+                loading="lazy"
+              />
+              <figcaption>Update-item workflow for editing existing inventory records.</figcaption>
+            </figure>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="project-tag">Activity history</p>
+              <h3>Restock history preserves dated inventory actions.</h3>
+              <p>
+                The restock-history screen keeps a separate record of prior restocking
+                events, including date, item, type, quantity, and a repeat-restock action.
+              </p>
+            </div>
+            <figure class="artifact-figure">
+              <img
+                src="assets/rovino/image2.png"
+                alt="RoVino restock history table showing dates, wine names, types, quantities, and restock-again buttons."
+                loading="lazy"
+              />
+              <figcaption>Restock history with dated activity records and repeatable restock actions.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="artifact-section takeaway-section" aria-labelledby="takeaway-title">
+        <div class="artifact-section-heading">
+          <p class="section-label">Technical Takeaways</p>
+          <h2 id="takeaway-title">What this project is meant to demonstrate.</h2>
+        </div>
+        <div class="takeaway-grid">
+          <article>
+            <h3>Database-backed records</h3>
+            <p>SQLite stores inventory items and supports repeatable retrieval, updates, and restock tracking.</p>
+          </article>
+          <article>
+            <h3>CRUD workflows</h3>
+            <p>The interface supports creating, reading, updating, and deleting records through clear user tasks.</p>
+          </article>
+          <article>
+            <h3>Workflow design</h3>
+            <p>Dashboard, add-item, update-item, and history screens separate the main inventory-management actions.</p>
+          </article>
+          <article>
+            <h3>Research/data-support relevance</h3>
+            <p>The same structure transfers to sample inventories, reagent tracking, lab records, and operational datasets.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Evan Kordovi</p>
+      <a href="index.html#work">Back to selected work</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

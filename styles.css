@@ -776,6 +776,186 @@ h3 {
   margin-bottom: 0;
 }
 
+.artifact-header {
+  color: var(--ink);
+  background: rgba(247, 244, 238, 0.95);
+  box-shadow: 0 1px 0 rgba(23, 33, 31, 0.11);
+  backdrop-filter: blur(16px);
+}
+
+.artifact-page {
+  padding-top: 82px;
+}
+
+.artifact-hero,
+.artifact-section {
+  padding: 76px 6vw;
+}
+
+.artifact-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 44px;
+  align-items: end;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(247, 244, 238, 0)),
+    var(--paper);
+}
+
+.artifact-hero-copy {
+  max-width: 780px;
+}
+
+.artifact-hero h1 {
+  max-width: 720px;
+  margin-bottom: 18px;
+  font-size: 3.15rem;
+}
+
+.artifact-hero-copy > p:not(.eyebrow) {
+  max-width: 710px;
+  margin-bottom: 26px;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.artifact-facts {
+  display: grid;
+  gap: 12px;
+}
+
+.artifact-facts div {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.artifact-facts span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--coral);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.artifact-facts strong {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+.artifact-section {
+  background: var(--surface);
+}
+
+.artifact-section:nth-of-type(odd) {
+  background: #eef3ef;
+}
+
+.artifact-section-heading {
+  width: min(900px, 100%);
+  margin: 0 auto 28px;
+}
+
+.artifact-section-heading p:not(.section-label) {
+  max-width: 760px;
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.artifact-figure {
+  margin: 0;
+}
+
+.artifact-figure img {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.artifact-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.workflow-figure {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.screen-stack {
+  display: grid;
+  gap: 24px;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.screen-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.38fr) minmax(0, 0.62fr);
+  gap: 26px;
+  align-items: start;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.screen-copy {
+  position: sticky;
+  top: 100px;
+}
+
+.screen-copy h3 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.screen-copy p:not(.project-tag) {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.portrait-shot {
+  max-width: 520px;
+}
+
+.takeaway-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.takeaway-grid article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 1px 0 rgba(23, 33, 31, 0.05);
+}
+
+.takeaway-grid h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.takeaway-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 @media (max-width: 900px) {
   .site-header {
     padding: 14px 5vw;
@@ -841,12 +1021,29 @@ h3 {
   .contact-layout,
   .figure-layout,
   .project-grid,
-  .skills-grid {
+  .skills-grid,
+  .artifact-hero,
+  .screen-card,
+  .takeaway-grid {
     grid-template-columns: 1fr;
   }
 
   .project-card {
     min-height: 0;
+  }
+
+  .artifact-hero,
+  .artifact-section {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .artifact-hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .screen-copy {
+    position: static;
   }
 }
 
@@ -895,8 +1092,22 @@ h3 {
     width: 100%;
   }
 
-  .section {
+  .section,
+  .artifact-hero,
+  .artifact-section {
     padding: 66px 5vw;
+  }
+
+  .artifact-page {
+    padding-top: 74px;
+  }
+
+  .artifact-hero {
+    gap: 28px;
+  }
+
+  .artifact-hero h1 {
+    font-size: 2.05rem;
   }
 
   .two-column,
@@ -906,7 +1117,8 @@ h3 {
 
   .research-figure,
   .project-card,
-  .timeline-item {
+  .timeline-item,
+  .screen-card {
     padding: 18px;
   }
 
