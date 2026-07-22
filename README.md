@@ -11,9 +11,14 @@ Live site target:
 Review these fields in `index.html` before putting the link on a resume:
 
 - Resume PDF: `assets/evan-kordovi-resume.pdf` powers the hero download button.
-- LinkedIn URL: currently points to `https://www.linkedin.com/in/evan-kordovi-0370130-/`.
 - Work links: add dedicated project pages, figures, PDFs, or writing samples only as those materials become public and worth showing.
 - Experience entries: keep these aligned with the current resume and avoid inflating early-career roles.
+
+## Positioning
+
+The site is written for research assistant, laboratory technician, QC analyst,
+and adjacent laboratory-support roles. Data and software projects are included
+as supporting evidence, not as the main professional lane.
 
 ## Publish on GitHub Pages
 
